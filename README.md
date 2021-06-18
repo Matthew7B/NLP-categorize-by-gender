@@ -1,6 +1,9 @@
 # NLP-categorize-by-gender
 
 Using BERT we can make a text predictor that's 75% accurate in distinguishing users who identify themselves as male/female using their chat messages from the social platform discord.
+
+bert3_gender_get_train_data puts together the training data, bert4_gender_train trains the model, run_bert_discord is an example of how you can make predictions using the model.
+
 It's trained on a small sample set of discord chat which isn't included in this repo. The model I've trained also is unavailable due to file size restrictions.
 
 Since the model only requires text as an input we can run it on other content such as movie dialogue from Marvel Avengers, which would return:
@@ -19,3 +22,4 @@ Since the model only requires text as an input we can run it on other content su
   THOR ♂ 75%
 
 There are many limitations of this project, such as the small size of the training data, quality of the training data, lack of fine tuning, and the developers lack of familiarity with the data.
+
